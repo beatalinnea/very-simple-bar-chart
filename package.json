@@ -1,0 +1,19 @@
+{
+  "name": "very-simple-bar-chart",
+  "version": "1.0.0",
+  "description": "A Very Simple Bar Chart",
+  "main": "barChart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatalinnea/very-simple-bar-chart.git"
+  },
+  "author": "Beata Eriksson <be222gr@student.lnu.se>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beatalinnea/very-simple-bar-chart/issues"
+  },
+  "homepage": "https://github.com/beatalinnea/very-simple-bar-chart#readme"
+}
