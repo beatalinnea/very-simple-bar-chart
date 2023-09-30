@@ -1,6 +1,6 @@
 {
   "name": "very-simple-bar-chart",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Very Simple Bar Chart",
   "main": "barChart.js",
   "scripts": {

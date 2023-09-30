@@ -318,5 +318,3 @@ export class BarChart {
     this.#addFrame()
   }
 }
-
-module.exports = { BarChart }
