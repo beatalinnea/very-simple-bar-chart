@@ -2,7 +2,7 @@
  * The the main class for the BarChart module.
  *
  * @author Beata Eriksson <be222gr@student.lnu.se>
- * @version 1.1.5
+ * @version 1.1.0
  */
 
 import { CanvasDrawer } from './canvasDrawer.js'
@@ -63,16 +63,32 @@ export class BarChart {
     this.#renderData()
   }
 
+  /**
+   * This method will change the size for the BarChart and re-render it.
+   *
+   * @param {number} width - the new width of the BarChart.
+   * @param {number} height - the new height of the BarChart.
+   */
   changeSize (width, height) {
     this.#setSizeAndBackground(width, height)
     this.#renderData()
   }
 
+  /**
+   * This method will change background color for the BarChart and re-render it.
+   *
+   * @param {string} color - the new background color of the BarChart.
+   */
   changeBackgroundColor (color) {
     this.#canvasDrawer.setBackgroundColor(color)
     this.#renderData()
   }
 
+  /**
+   * Will add a chosen headline to the BarChart.
+   *
+   * @param {string} text - The text to be viewed within the BarChart.
+   */
   addHeadline (text) {
     if (typeof text !== 'string') {
       throw new Error('The argument must be a string')
@@ -84,11 +100,19 @@ export class BarChart {
     this.#canvasDrawer.addLeftHeadline(this.#headline)
   }
 
+  /**
+   * Will remove the headline from the BarChart.
+   */
   clearHeadline () {
     this.#headline = null
     this.#renderData()
   }
 
+  /**
+   * Returns the total amount of votes (y values) for the BarChart.
+   *
+   * @returns {number} - the total amount of votes.
+   */
   getAmountOfVotes () {
     return this.#dataEntries.reduce((total, point) => total + point.y, 0)
   }

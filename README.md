@@ -1,5 +1,5 @@
 # BarChart
-- BarChart version 1.1.6
+- BarChart version 1.1.7
 - This is a module created as a student project for Laboration 2 in the course 1DV610 Mjukvarukvalitet at Linnaeus University.
 - This module is written in, and compatible with, JavaScript
 
