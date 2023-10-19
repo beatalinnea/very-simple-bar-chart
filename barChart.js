@@ -2,7 +2,7 @@
  * The the main class for the BarChart module.
  *
  * @author Beata Eriksson <be222gr@student.lnu.se>
- * @version 1.1.0
+ * @version 1.1.5
  */
 
 import { CanvasDrawer } from './canvasDrawer.js'
@@ -109,7 +109,7 @@ export class BarChart {
       this.#sortDataEntries()
       this.#renderBars()
       this.#addBackgroundLines()
-      this.#canvasDrawer.addLeftHeadline(`Votes: ${this.getAmountOfVotes()}`)
+      this.#canvasDrawer.addRightHeadline(`Total: ${this.getAmountOfVotes()}`)
     }
     if (this.#headline) {
       this.addHeadline(this.#headline)
